@@ -13,7 +13,6 @@ public class MyCrossover extends AbstractCrossover<double[]> {
 
     protected List<double[]> mate(double[] p1, double[] p2, int i, Random random) {
         ArrayList children = new ArrayList();
-        int point = random.nextInt(p1.length);
         double[] offspring1 = new double[p1.length];
         double[] offspring2 = new double[p1.length];
         for (int j = 0; j < p1.length; j++){
