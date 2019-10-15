@@ -7,7 +7,6 @@ import java.util.Random;
 
 public class MyMutation implements EvolutionaryOperator<double[]> {
     public List<double[]> apply(List<double[]> population, Random random) {
-        //double s = 1;
         for (double[] solution: population) {
             double alpha = random.nextDouble();
             if (alpha > 0.4) {
